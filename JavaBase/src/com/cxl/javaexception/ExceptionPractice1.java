@@ -19,12 +19,12 @@ public class ExceptionPractice1 {
 			System.out.println("欢迎提出建议");
 		}
 	}
-	private static void setAge(int age) throws Exception {
-		if(age<=0 || age>100) {		
-			throw new Exception("年龄必须是0~100之间");	
-		}else {
-			
+	private static  void setAge(int age) throws Exception {
+		if(age>=1 && age<100) {		
 			Age = age;	
+		}else {
+			throw new Exception("年龄必须是0~100之间");
+			
 		}	
 	}
 }
